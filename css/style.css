@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Ubuntu:wght@400;500&display=swap");
+
+:root {
+	--white: #ffffff;
+	--blue: #3e64ff;
+	--light_blue: #00d4ff;
+	--grey: #b7b7b7;
+	--light_grey: #e9ecef;
+	--default_font_color: #313131;
+
+	--default_font: "Montserrat", sans-serif;
+	--seond_font: "Ubuntu", sans-serif;
+}
+
+body {
+	font-family: var(--default_font);
+	color: var(--default_font_color);
+}
+
+a:link,
+:visited,
+:hover,
+:active {
+	text-decoration: none;
+}
+
+h1 {
+	font-family: var(--seond_font);
+	font-weight: 500;
+}
+
+.about_me,
+.skills {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.about_me img {
+	width: 65%;
+	height: auto;
+	border-radius: 50%;
+	background-color: var(--white);
+	padding: 10px;
+	-webkit-box-shadow: 5px 26px 48px -28px var(--grey);
+	-moz-box-shadow: 5px 26px 48px -28px var(--grey);
+	box-shadow: 5px 26px 48px -28px var(--grey);
+}
+
+.btn_cv {
+	padding: 10px 25px;
+	font-size: 16px;
+	border-radius: 40px;
+
+	background: var(--blue);
+	background: linear-gradient(20deg, var(--blue) 0%, var(--light_blue) 100%);
+	border: 0;
+	color: var(--white);
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+}
+
+.btn_cv:hover {
+	box-shadow: 0px 37px 20px -20px rgba(0, 0, 0, 0.2);
+	-webkit-moz-transform: translate(0px, -10px) scale(1.2);
+	transform: translate(0px, -10px) scale(1.2);
+}
+
+.btn_contact {
+	padding: 10px 25px;
+	font-size: 16px;
+	border-radius: 40px;
+	background: transparent;
+	border: 1px solid;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+}
+
+.btn_contact:hover {
+	background: var(--blue);
+	background: linear-gradient(20deg, var(--blue) 0%, var(--light_blue) 100%);
+	color: var(--white);
+	box-shadow: 0px 37px 20px -20px rgba(0, 0, 0, 0.2);
+	-webkit-moz-transform: translate(0px, -10px) scale(1.2);
+	transform: translate(0px, -10px) scale(1.2);
+}
+
+.progress-bar {
+	background: linear-gradient(20deg, var(--blue) 0%, var(--light_blue) 100%);
+}
+
+h2.box_title {
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 500;
+	font-size: 25px;
+	padding-bottom: 10px;
+}
+
+.left_box {
+	margin: 20px 0;
+	border-bottom: 1px solid var(--light_grey);
+	position: relative;
+	padding: 5px 20px 5px 20px;
+}
+
+.box_icon {
+	position: absolute;
+	display: block;
+	color: var(--light_blue);
+	font-size: 30px;
+	top: 0px;
+	right: 30px;
+}
+.lang_badge {
+	border: solid 1px var(--grey);
+	padding: 4px 10px;
+	color: var(--default_font_color);
+	font-weight: 400;
+	font-family: "Montserrat", sans-serif;
+}
+.intrested {
+	margin-left: -25px;
+}
+.intrested ul li {
+	display: inline-flex;
+	border: solid 1px var(--grey);
+	padding: 5px 10px;
+	margin: 2px;
+	border-radius: 5px;
+}
+
+.right_box {
+	margin: 20px 0;
+	position: relative;
+	padding: 5px 20px 5px 20px;
+}
+
+footer {
+	padding: 20px;
+	margin: 10px 0;
+}
+
+.resume ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+.resume ul:before {
+	content: "";
+	display: inline-block;
+	width: 2px;
+	background: var(--light_blue);
+	position: absolute;
+	left: 2px;
+	top: 5px;
+	height: calc(100% - 10px);
+}
+.resume ul li {
+	position: relative;
+	padding-left: 50px;
+	padding-bottom: 30px;
+	margin-bottom: 15px;
+}
+.resume ul li:before {
+	content: "";
+	display: inline-block;
+	width: 6px;
+	height: 6px;
+	background: var(--blue);
+	position: absolute;
+	left: 0;
+	top: 5px;
+	border-radius: 10px;
+}
+
+.badge_fact {
+	background: var(--light_blue);
+}
+
+.contact {
+	background: linear-gradient(20deg, var(--blue) 0%, var(--light_blue) 100%);
+	padding: 50px 0;
+	color: var(--white);
+}
+
+.contact a:link,
+a:visited,
+a:hover,
+a:active {
+	color: var(--white);
+	text-decoration: none;
+}
+
+#scrollTop {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 99;
+	font-size: 18px;
+	border: 1px solid var(--grey);
+	border-radius: 40px;
+	background-color: transparent;
+	color: var(--grey);
+	cursor: pointer;
+	padding: 10px 20px;
+}
+
+#scrollTop:hover {
+	background-color: var(--white);
+}
+
+.skills_list ul li {
+	display: inline-flex;
+	border: solid 1px var(--light_blue);
+	padding: 5px 10px;
+	margin: 2px;
+	border-radius: 5px;
+	transition: all 0.4s ease-in-out;
+}
+
+.skills_list ul li:hover {
+	border: solid 1px var(--blue);
+}
+
+.flag-container {
+	position: fixed;
+	top: 20%;
+	right: 0;
+	border-radius: 15px 0 0 15px;
+	background-color: var(--grey);
+	padding: 0.5rem 0.5rem;
+	margin: -1px;
+	transition: all 0.2s ease-in-out;
+}
+
+.flag-container:hover {
+	background-color: var(--blue);
+	padding: 0.5rem 0.7rem;
+	transition: all 0.2s ease-in-out;
+}
+
+.vertical-text {
+	writing-mode: vertical-rl;
+	text-orientation: mixed;
+	color: var(--white);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 0.8rem;
+}
+
+.sm_contact i {
+	font-size: 25px;
+	margin: 15px;
+}
+
+@media screen and (max-width: 992px) {
+	.about_me {
+		flex-direction: column;
+	}
+}
