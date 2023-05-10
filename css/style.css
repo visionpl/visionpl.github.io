@@ -232,7 +232,7 @@ a:active {
 	border-radius: 15px 0 0 15px;
 	background-color: var(--grey);
 	padding: 0.5rem 0.5rem;
-	margin: -1px;
+	margin: 0;
 	transition: all 0.2s ease-in-out;
 }
 
